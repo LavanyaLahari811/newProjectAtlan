@@ -1,0 +1,81 @@
+.itinerary-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+      font-size: 2rem;
+      font-weight: 700;
+      text-align: center;
+    }
+  
+    .input-group {
+      width: 100%;
+      margin-bottom: 15px;
+  
+      label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: bold;
+        color: #555;
+      }
+  
+      input,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        transition: border-color 0.3s;
+        
+        &:focus {
+          border-color: #ff7e5f;
+          outline: none;
+        }
+      }
+    }
+  
+    .activity {
+      margin-bottom: 15px;
+      border: 1px solid #eaeaea;
+      padding: 12px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      
+      label {
+        margin-bottom: 6px;
+      }
+    }
+  
+    button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      font-size: 16px;
+      color: white;
+      background-color: #ff7e5f;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+  
+      &:hover {
+        background-color: #ff6a45;
+        transform: scale(1.05);
+      }
+    }
+  
+    @media (max-width: 600px) {
+      max-width: 90%;
+      padding: 15px;
+    }
+  }
+  

@@ -1,0 +1,42 @@
+.multi-step-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  h1 {
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin: 10px 0;
+    }
+
+    input[type='number'],
+    input[type='date'] {
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #ff7e5f;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #ff6a45;
+      }
+    }
+  }
+}
